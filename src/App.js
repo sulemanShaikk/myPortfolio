@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./components/navbar/navbar.js";
+import Intro from "./components/intro/intro.js";
+import Skills from "./components/skills/skills.js";
+import Works from "./components/works/works.js";
+import Contact from "./components/contact/contact.js";
+import Footer from "./components/footer/footer.js";
+import { Link } from 'react-scroll';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Intro />
+      <Skills />
+      <Works />
+      <Contact />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+
