@@ -84,7 +84,7 @@
   
   .active {
     color: yellow;
-    border-bottom: 3px solid pink;
+    border-bottom: 3px solid yellow;
     padding-bottom: 0.5rem;
   }
   
@@ -116,12 +116,25 @@
       object-fit: cover;
       height: 1.8rem; 
   }
-   
-    @media screen and (max-width:720px) {
-    .mobMenu {
-        display: flex;
-       }
-       .desktopMenu {
-        display: none;
-       }
+  
+  .mobMenu {
+    transition: none;
   }
+  
+
+
+   
+  @media screen and (max-width: 720px) {
+    .mobMenu {
+      display: flex;
+    }
+  
+    .desktopMenu {
+      display: none;
+    }
+  
+    .workBtn {
+      display: none;
+    }
+  }
+  
