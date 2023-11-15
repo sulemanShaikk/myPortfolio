@@ -1,21 +1,23 @@
 .navbar {
     height: 5rem;
-    width: 130%; /* Set width to 100% for full screen */
-    max-width: 75rem;
+    width: 1000%; /* Adjust the width as needed */
+    max-width: 100%; /* Set a reasonable maximum width */
     margin: 0 auto;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     z-index: 100;
     background-color: rgb(25, 24, 24);
-  }
+}
+
+
+
   
   .logo {
-    width: 4rem;
-    height: 3rem;
+    width: 5rem;
+    height: 4rem;
     object-fit: cover;
   }
   
@@ -35,7 +37,7 @@
     border-bottom: 3px solid antiquewhite;
   }
   
-  .desktopMenuImg {
+  .mobMenu {
     width: 6rem;
     height: 7rem;
     object-fit: cover;
@@ -73,7 +75,7 @@
   }
   
   .workBtn{
-    margin: 3rem 2rem;
+    margin: 4rem 2rem;
     padding: 0.5rem 2.5rem;
     border: none;
     border-radius: 2rem;
@@ -101,6 +103,7 @@
     min-width: 15rem;
     background-color: rgb(40, 40, 40);
     border-radius: 1rem;
+    right: 0; 
   }
   
   .ListItem {
@@ -109,32 +112,39 @@
     margin: 0.25rem;
     border-radius: 10px;
     background-color: rgb(30, 30, 30);
+    white-space: nowrap;
   }
   
   .mobMenu {
       display: none;
       object-fit: cover;
-      height: 1.8rem; 
+      height: auto;
+      width: auto; 
+
   }
   
   .mobMenu {
     transition: none;
   }
   
-
-
    
   @media screen and (max-width: 720px) {
-    .mobMenu {
-      display: flex;
-    }
-  
+    
     .desktopMenu {
       display: none;
     }
-  
+
+
+    .mobMenu {
+      display: flex;
+      max-width: 100%;
+    }
+
+    ..navbar {
+       width: 100%;
+    }
+
     .workBtn {
       display: none;
     }
-  }
-  
+  } 
