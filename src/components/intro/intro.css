@@ -1,10 +1,8 @@
 #intro {
     max-width: 75rem;
     margin: 0 auto;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
-
 
 .Bg{
     position: absolute;
@@ -26,7 +24,6 @@
     justify-content: center;
 
 }
-
 
 .hello{
     font-size: 1.75rem;
@@ -52,6 +49,14 @@
     border-radius: 3rem;
 }
 
+.resume{
+    background:  rgb(255, 0, 89);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
 
 @media screen and  (max-width:840px) {
     .Bg {
@@ -71,4 +76,12 @@
         right: -20px;
     }
     
+}
+
+.resume{
+    background:  rgb(255, 0, 89);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
 }

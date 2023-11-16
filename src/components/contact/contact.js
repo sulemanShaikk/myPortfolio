@@ -27,6 +27,8 @@ const Contact = () => {
     emailjs.sendForm('service_2iur4ip', 'template_c6aht4i', form.current, 'IH_TI-Im9C4vpOP6_')
       .then((result) => {
           console.log(result.text);
+          e.target.reset();
+          alert('Aapka mail pahunchgaya hai');
       }, (error) => {
           console.log(error.text);
       });
